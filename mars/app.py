@@ -43,7 +43,22 @@ def output(inv, max_weight) :
             'ratio': ratio
         }
     }
-    
+  
 results = output(inv, max_weight)
 print(results['results'])
+
+inv_2 = {
+    'bananas': [300, 2122000],
+    'apples': [250, 132000],
+    'jackfruit': [200, 110800],
+    'kiwi': [100, 80000],
+    'oranges': [500, 524000],
+    'grapes': [30, 300120],
+    'peaches': [208, 200530],
+    'pineapple': [140, 106000],
+    'strawberries': [100, 170000],
+}  
+
+results_2 = output(inv_2, max_weight)
+print('\n\n', results_2['results'])
 print()
